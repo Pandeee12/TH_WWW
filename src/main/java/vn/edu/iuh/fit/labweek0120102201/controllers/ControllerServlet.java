@@ -13,10 +13,9 @@ import java.io.IOException;
 public class ControllerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String action = req.getParameter("action");
-        if(action.equalsIgnoreCase("logon")) {
-            resp.getWriter().println("hehe");
-        }
+        resp.getWriter().println("hello");
+
+
 
     }
 
